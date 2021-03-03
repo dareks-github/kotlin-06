@@ -7,7 +7,10 @@ allprojects {
     //stage 4
     task stage(dependsOn: ['build', 'clean'])
     build.mustRunAfter clean
+
 }
+
+
 
 
 group 'org.example'
