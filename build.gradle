@@ -4,9 +4,8 @@ plugins {
 
 
 allprojects {
-    tasks.register("stage") {
-        dependsOn("build")
-    }
+    task stage(dependsOn: ['build', 'clean'])
+    build.mustRunAfter clean
 }
 
 
