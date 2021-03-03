@@ -14,10 +14,11 @@ całość w Kotlinie
 //metoda startowa
 
 fun main() {
+
     var x = 1
 
     //zmienne
-    val PORT = 5000
+    val PORT = Integer.parseInt(System.getProperty("port", "8080"))
     val newLine = "\r\n"
     try {
         val serverSocket = ServerSocket(PORT) // obiekt servera
